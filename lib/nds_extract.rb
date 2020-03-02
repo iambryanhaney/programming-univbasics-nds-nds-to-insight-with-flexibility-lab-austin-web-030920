@@ -100,16 +100,11 @@ def movies_with_directors_set(source)
   while i < source.length do
     j = 0
     while j < source[i][:movies].length do
-      # mwd << [{:title => source[i][:movies][j][:title], :director_name => source[i][:name]}]
       mwd << [movie_with_director_name(source[i][:name], source[i][:movies][j])]
       j += 1
     end
     i += 1
   end
-  # puts "\nCalling Pretty Print on source..."
-  # pp source
-  # puts "\nCalling Pretty Print on result...\n"
-  # pp mwd
   mwd
 end
 
