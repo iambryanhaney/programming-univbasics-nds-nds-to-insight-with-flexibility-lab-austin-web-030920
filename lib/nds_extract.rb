@@ -105,7 +105,7 @@ def movies_with_directors_set(source)
     end
     i += 1
   end
-  # pp mwd
+  pp mwd
   mwd
 end
 
