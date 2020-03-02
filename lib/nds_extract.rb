@@ -105,8 +105,9 @@ def movies_with_directors_set(source)
     end
     i += 1
   end
-  puts "Calling Pretty Print on source..."
+  puts "\nCalling Pretty Print on source..."
   pp source
+  puts "\nCalling Pretty Print on result...\n"
   mwd
 end
 
