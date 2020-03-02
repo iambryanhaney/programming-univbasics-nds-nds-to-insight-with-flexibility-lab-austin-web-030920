@@ -101,11 +101,13 @@ def movies_with_directors_set(source)
     movies = []
     j = 0
     while j < sources[i][:movies].length do
-      movies << {:title => sources[i][:movies][:title]
-    mwd << {:movies => source[i][:movies]}
+      movies << {:title => sources[i][:movies][j][:title], :director_name => sources[i][:name]}
+      j += 1
+    end
+    mwd << movies
     i += 1
   end
-  pp mwd
+  #pp mwd
   mwd
 end
 
