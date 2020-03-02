@@ -94,7 +94,6 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
-  # pp source
   i = 0
   mwd = []
   while i < source.length do
@@ -105,10 +104,10 @@ def movies_with_directors_set(source)
     end
     i += 1
   end
-  puts "\nCalling Pretty Print on source..."
-  pp source
-  puts "\nCalling Pretty Print on result...\n"
-  pp mwd
+  # puts "\nCalling Pretty Print on source..."
+  # pp source
+  # puts "\nCalling Pretty Print on result...\n"
+  # pp mwd
   mwd
 end
 
@@ -117,7 +116,7 @@ end
 # call code. You'll have to "see-saw" to get this to work!
 
 def studios_totals(nds)
-  # a_o_a_movies_with_director_names = movies_with_directors_set(nds)
-  # movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
-  # return gross_per_studio(movies_with_director_names)
+  a_o_a_movies_with_director_names = movies_with_directors_set(nds)
+  movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
+  return gross_per_studio(movies_with_director_names)
 end
